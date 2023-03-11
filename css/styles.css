@@ -547,12 +547,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  
-}
-
-.footer-subscribe-btn{
-  display: inline-block;
-  margin-left: 24px;
 }
 
 .subscribe-btn{
@@ -562,6 +556,7 @@ body {
   width: 165px;
   height: 40px;
 
+  margin-left: 24px;
   padding: 8px 24px;
   gap: 16px;
 
@@ -723,7 +718,6 @@ body {
 
 .modal{
   position: relative;
-  overflow: auto;
 
   padding: 72px 24px 24px;
   width: 100%;
@@ -819,14 +813,15 @@ body {
   max-width: 360px;
   height: 40px;
 
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition: border var(--transition-hover);
 }
 
-.modal-input:focus-within{
-  border: var(--primary-brand-color);
+.modal-input:focus{
+  border: 1px solid var(--primary-brand-color);
 }
 
 .modal-input::placeholder{
@@ -867,6 +862,7 @@ body {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 
   font-style: normal;
   font-weight: 400;
@@ -879,7 +875,7 @@ body {
 }
 
 .comment:focus{
-  border: var(--primary-brand-color);
+  border: 1px solid var(--primary-brand-color);
 }
 
 .modal-checkbox{
